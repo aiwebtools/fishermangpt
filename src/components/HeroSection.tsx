@@ -23,7 +23,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="inline-block mb-2 py-1 px-3 rounded-full bg-cyber-blue/10 border border-cyber-blue/30"
           >
-            <span className="text-cyber-blue font-medium text-sm">AI-Powered Fishing Assistant</span>
+            <span className="text-cyber-blue font-medium text-sm">AI-Powered Multimodal Fishing Assistant</span>
           </motion.div>
           
           <motion.h1 
