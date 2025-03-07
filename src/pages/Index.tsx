@@ -48,7 +48,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen overflow-x-hidden">
-      {/* Fixed Header */}
+      {/* Fixed Header/Navigation Bar */}
       <motion.header 
         className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b border-cyber-blue/20"
         style={{ opacity: headerOpacity }}
@@ -75,6 +75,8 @@ const Index = () => {
             >
               USE Fisherman GPT Now
             </a>
+            <a href="#features" className="text-white hover:text-cyber-blue transition-colors">Features</a>
+            <a href="#how-it-works" className="text-white hover:text-cyber-blue transition-colors">How It Works</a>
             <a href="#faq" className="text-white hover:text-cyber-blue transition-colors">FAQ</a>
             <a href="#disclaimer" className="text-white hover:text-cyber-blue transition-colors">Disclaimer</a>
             <a 
@@ -117,6 +119,20 @@ const Index = () => {
               onClick={() => setMenuOpen(false)}
             >
               USE Fisherman GPT Now
+            </a>
+            <a 
+              href="#features" 
+              className="text-white text-xl hover:text-cyber-blue transition-colors"
+              onClick={() => setMenuOpen(false)}
+            >
+              Features
+            </a>
+            <a 
+              href="#how-it-works" 
+              className="text-white text-xl hover:text-cyber-blue transition-colors"
+              onClick={() => setMenuOpen(false)}
+            >
+              How It Works
             </a>
             <a 
               href="#faq" 
@@ -230,61 +246,16 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Features Section with Image First */}
       <section id="features" className="py-20 cyber-grid relative">
         <div className="container mx-auto px-4">
-          <div className="mb-16 text-center">
-            <h2 className="text-3xl md:text-4xl font-cyber font-bold mb-4">
-              <span className="neon-text">Advanced</span> Features
-            </h2>
-            <p className="text-gray-300 max-w-3xl mx-auto">
-              Fisherman GPT offers a comprehensive suite of tools to make your fishing trip successful, 
-              from planning to execution and everything in between.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <FeatureCard 
-              title="Spot Location"
-              description="Find the best fishing spots in your area with precise GPS coordinates and detailed water conditions."
-              icon={<Anchor className="h-10 w-10 text-cyber-blue" />}
-            />
-            <FeatureCard 
-              title="Equipment Finder"
-              description="Get recommendations for the most affordable and effective fishing gear specific to your target species."
-              icon={<Fish className="h-10 w-10 text-cyber-purple" />}
-            />
-            <FeatureCard 
-              title="Cost Analysis"
-              description="Receive detailed breakdowns of all expenses, from gear to guides, helping you budget effectively."
-              icon={<Info className="h-10 w-10 text-cyber-green" />}
-            />
-            <FeatureCard 
-              title="Technique Guide"
-              description="Learn the most effective fishing techniques with step-by-step instructions tailored to your experience level."
-              icon={<HelpCircle className="h-10 w-10 text-cyber-blue" />}
-            />
-            <FeatureCard 
-              title="Weather Intelligence"
-              description="Get real-time weather forecasts and understand how they affect fishing conditions in your area."
-              icon={<Anchor className="h-10 w-10 text-cyber-purple" />}
-            />
-            <FeatureCard 
-              title="Document Creation"
-              description="Receive comprehensive reports with all the information you need, ready to download as a document."
-              icon={<Info className="h-10 w-10 text-cyber-green" />}
-            />
-          </div>
-        </div>
-        
-        {/* Fish image section */}
-        <div className="mt-24 relative overflow-hidden">
-          <div className="container mx-auto px-4">
+          {/* Fish image section - Moved above the Features heading */}
+          <div className="mb-16 relative overflow-hidden">
             <div className="relative rounded-2xl overflow-hidden border border-cyber-blue/30 shadow-[0_0_50px_rgba(0,242,255,0.15)]">
               <img
                 src="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/a-cinematic-shot-of-a-bearded-fisherman-wearin.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:1200,h:600,cg:true"
                 alt="Fisherman in action"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover max-h-[500px]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-cyber-black via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
@@ -306,6 +277,55 @@ const Index = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="mb-16 text-center">
+            <h2 className="text-3xl md:text-4xl font-cyber font-bold mb-4">
+              <span className="neon-text">Advanced</span> Features
+            </h2>
+            <p className="text-gray-300 max-w-3xl mx-auto">
+              Fisherman GPT offers a comprehensive suite of tools to make your fishing trip successful, 
+              from planning to execution and everything in between.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <FeatureCard 
+              title="Spot Location"
+              description="Find the best fishing spots in your area with precise GPS coordinates and detailed water conditions."
+              icon={<Anchor className="h-10 w-10 text-cyber-blue" />}
+              delay={0}
+            />
+            <FeatureCard 
+              title="Equipment Finder"
+              description="Get recommendations for the most affordable and effective fishing gear specific to your target species."
+              icon={<Fish className="h-10 w-10 text-cyber-purple" />}
+              delay={1}
+            />
+            <FeatureCard 
+              title="Cost Analysis"
+              description="Receive detailed breakdowns of all expenses, from gear to guides, helping you budget effectively."
+              icon={<Info className="h-10 w-10 text-cyber-green" />}
+              delay={2}
+            />
+            <FeatureCard 
+              title="Technique Guide"
+              description="Learn the most effective fishing techniques with step-by-step instructions tailored to your experience level."
+              icon={<HelpCircle className="h-10 w-10 text-cyber-blue" />}
+              delay={3}
+            />
+            <FeatureCard 
+              title="Weather Intelligence"
+              description="Get real-time weather forecasts and understand how they affect fishing conditions in your area."
+              icon={<Anchor className="h-10 w-10 text-cyber-purple" />}
+              delay={4}
+            />
+            <FeatureCard 
+              title="Document Creation"
+              description="Receive comprehensive reports with all the information you need, ready to download as a document."
+              icon={<Info className="h-10 w-10 text-cyber-green" />}
+              delay={5}
+            />
           </div>
         </div>
       </section>
@@ -408,6 +428,22 @@ const Index = () => {
                     className="text-gray-400 hover:text-cyber-blue transition-colors"
                   >
                     USE Fisherman GPT Now
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#features" 
+                    className="text-gray-400 hover:text-cyber-blue transition-colors"
+                  >
+                    Features
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#how-it-works" 
+                    className="text-gray-400 hover:text-cyber-blue transition-colors"
+                  >
+                    How It Works
                   </a>
                 </li>
                 <li>
