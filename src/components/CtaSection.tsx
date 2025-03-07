@@ -18,7 +18,7 @@ const CtaSection = () => {
             Ready to <span className="text-gradient">Transform</span> Your Fishing Experience?
           </h2>
           <p className="text-gray-300 text-lg mb-10 max-w-3xl mx-auto">
-            Join thousands of anglers who are leveraging AI to find better spots, save money on gear, and catch more fish.
+            Join thousands of anglers who are leveraging AI to find better spots, identify fish, discover the perfect bait, and catch more fish.
           </p>
           <a 
             href="https://chatgpt.com/g/g-AmVAYOglF-fisherman-gpt" 

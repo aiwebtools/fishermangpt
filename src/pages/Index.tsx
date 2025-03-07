@@ -1,10 +1,11 @@
 
-import React, { useRef } from 'react';
+import React from 'react';
 import { useScroll, useTransform } from 'framer-motion';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
+import CapabilitiesSection from '@/components/CapabilitiesSection';
 import TestimonialSection from '@/components/TestimonialSection';
 import FaqSection from '@/components/FaqSection';
 import DisclaimerSection from '@/components/DisclaimerSection';
@@ -28,6 +29,8 @@ const Index = () => {
           <HowItWorksSection />
         </div>
       </section>
+      
+      <CapabilitiesSection />
       
       <section className="py-20 cyber-grid relative">
         <div className="container mx-auto px-4">

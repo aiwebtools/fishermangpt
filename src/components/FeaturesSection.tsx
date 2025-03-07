@@ -1,7 +1,7 @@
 
 import React from 'react';
 import FeatureCard from './FeatureCard';
-import { Anchor, Fish, HelpCircle, Info } from 'lucide-react';
+import { Anchor, Fish, HelpCircle, Info, Map, MapPin, Presentation } from 'lucide-react';
 
 const FeaturesSection = () => {
   return (
@@ -17,7 +17,7 @@ const FeaturesSection = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-cyber-black via-transparent to-transparent"></div>
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
               <div className="max-w-2xl">
-                <h2 className="text-2xl md:text-3xl font-cyber font-bold mb-4 text-white">
+                <h2 className="text-2xl md:text-3xl font-cyber font-bold mb-4 text-cyber-blue">
                   Expert Fishing Knowledge at Your Fingertips
                 </h2>
                 <p className="text-gray-200 mb-6">
