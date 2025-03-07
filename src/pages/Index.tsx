@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation, useScroll, useTransform } from 'framer-motion';
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -19,7 +18,6 @@ const Index = () => {
   
   const toggleMenu = () => setMenuOpen(!menuOpen);
   
-  // Close mobile menu when clicking outside
   useEffect(() => {
     const handleOutsideClick = (e: MouseEvent) => {
       if (menuOpen && e.target instanceof HTMLElement) {
@@ -34,7 +32,6 @@ const Index = () => {
     return () => document.removeEventListener('click', handleOutsideClick);
   }, [menuOpen]);
   
-  // Disable body scroll when mobile menu is open
   useEffect(() => {
     if (menuOpen) {
       document.body.style.overflow = 'hidden';
@@ -48,7 +45,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen overflow-x-hidden">
-      {/* Fixed Header/Navigation Bar */}
       <motion.header 
         className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b border-cyber-blue/20"
         style={{ opacity: headerOpacity }}
@@ -65,7 +61,6 @@ const Index = () => {
             </div>
           </div>
           
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             <a 
               href="https://chatgpt.com/g/g-AmVAYOglF-fisherman-gpt" 
@@ -89,7 +84,6 @@ const Index = () => {
             </a>
           </nav>
           
-          {/* Mobile Menu Button */}
           <button 
             className="md:hidden text-white p-2" 
             onClick={toggleMenu}
@@ -104,7 +98,6 @@ const Index = () => {
         </div>
       </motion.header>
       
-      {/* Mobile Menu */}
       {menuOpen && (
         <div 
           id="mobile-menu"
@@ -161,7 +154,6 @@ const Index = () => {
         </div>
       )}
 
-      {/* Hero Section */}
       <section 
         ref={heroRef}
         className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20 pb-16"
@@ -246,10 +238,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Features Section with Image First */}
       <section id="features" className="py-20 cyber-grid relative">
         <div className="container mx-auto px-4">
-          {/* Fish image section - Moved above the Features heading */}
           <div className="mb-16 relative overflow-hidden">
             <div className="relative rounded-2xl overflow-hidden border border-cyber-blue/30 shadow-[0_0_50px_rgba(0,242,255,0.15)]">
               <img
@@ -272,7 +262,7 @@ const Index = () => {
                     rel="noopener noreferrer"
                     className="neon-btn"
                   >
-                    Start Fishing Smarter
+                    USE Fisherman GPT Now
                   </a>
                 </div>
               </div>
@@ -330,35 +320,30 @@ const Index = () => {
         </div>
       </section>
 
-      {/* How It Works Section */}
       <section id="how-it-works" className="py-20 ocean-gradient relative">
         <div className="container mx-auto px-4">
           <HowItWorksSection />
         </div>
       </section>
       
-      {/* Testimonials Section */}
       <section className="py-20 cyber-grid relative">
         <div className="container mx-auto px-4">
           <TestimonialSection />
         </div>
       </section>
       
-      {/* FAQ Section */}
       <section id="faq" className="py-20 ocean-gradient relative">
         <div className="container mx-auto px-4">
           <FaqSection />
         </div>
       </section>
       
-      {/* Disclaimer Section */}
       <section id="disclaimer" className="py-20 cyber-grid relative">
         <div className="container mx-auto px-4">
           <DisclaimerSection />
         </div>
       </section>
       
-      {/* CTA Section */}
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-cyber-blue/5"></div>
         <div 
@@ -388,7 +373,6 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Footer */}
       <footer className="border-t border-cyber-blue/20 relative">
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
