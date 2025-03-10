@@ -76,6 +76,24 @@
     @apply bg-cyber-blue/60;
   }
 
+  /* Custom scrollbar for popups */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-cyber-blue/30 rounded-full;
+    border: 0;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-cyber-blue/60;
+  }
+
   /* Glass card style */
   .glass {
     @apply bg-white/5 backdrop-blur-sm border border-white/10 shadow-xl;

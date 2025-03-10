@@ -11,6 +11,7 @@ import FaqSection from '@/components/FaqSection';
 import DisclaimerSection from '@/components/DisclaimerSection';
 import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
+import DisclaimerPopup from '@/components/DisclaimerPopup';
 
 const Index = () => {
   const { scrollYProgress } = useScroll();
@@ -19,6 +20,7 @@ const Index = () => {
   return (
     <div className="min-h-screen overflow-x-hidden">
       <Header headerOpacity={headerOpacity} />
+      <DisclaimerPopup />
 
       <HeroSection />
 
