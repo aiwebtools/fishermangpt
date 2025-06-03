@@ -52,7 +52,7 @@ const Header = ({ headerOpacity }: HeaderProps) => {
               <h1 className="font-cyber text-xl md:text-2xl font-bold tracking-wider text-white">
                 Fisherman <span className="neon-text">GPT</span>
               </h1>
-              <p className="text-xs text-gray-400">Presented by AiWebTools.Ai</p>
+              <p className="text-xs text-gray-400">Free AI Tools by AiWebTools.AI</p>
             </div>
           </div>
           
@@ -62,27 +62,29 @@ const Header = ({ headerOpacity }: HeaderProps) => {
               target="_blank" 
               rel="noopener noreferrer"
               className="neon-btn"
+              title="Use Free AI Fishing Tool"
             >
-              USE Fisherman GPT Now
+              USE Free AI Fishing Tool
             </a>
-            <a href="#features" className="text-white hover:text-cyber-blue transition-colors">Features</a>
-            <a href="#how-it-works" className="text-white hover:text-cyber-blue transition-colors">How It Works</a>
-            <a href="#faq" className="text-white hover:text-cyber-blue transition-colors">FAQ</a>
-            <a href="#disclaimer" className="text-white hover:text-cyber-blue transition-colors">Disclaimer</a>
+            <a href="#features" className="text-white hover:text-cyber-blue transition-colors" title="AI Fishing Features">AI Features</a>
+            <a href="#how-it-works" className="text-white hover:text-cyber-blue transition-colors" title="How AI Fishing Works">How It Works</a>
+            <a href="#faq" className="text-white hover:text-cyber-blue transition-colors" title="AI Fishing FAQ">FAQ</a>
+            <a href="#disclaimer" className="text-white hover:text-cyber-blue transition-colors" title="AI Tool Disclaimer">Disclaimer</a>
             <a 
               href="https://www.aiwebtools.ai" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white hover:text-cyber-blue transition-colors"
+              title="More Free AI Tools - AiWebTools.AI"
             >
-              More AI Tools
+              More Free AI Tools
             </a>
           </nav>
           
           <button 
             className="md:hidden text-white p-2" 
             onClick={toggleMenu}
-            aria-label="Toggle menu"
+            aria-label="Toggle navigation menu"
           >
             {menuOpen ? (
               <X className="h-6 w-6 text-cyber-blue" />

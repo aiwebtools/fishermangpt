@@ -14,11 +14,11 @@ const Footer = () => {
                 <h3 className="font-cyber text-xl font-bold tracking-wider text-white">
                   Fisherman <span className="neon-text">GPT</span>
                 </h3>
-                <p className="text-xs text-gray-400">Presented by AiWebTools.Ai</p>
+                <p className="text-xs text-gray-400">Free AI Tools by AiWebTools.AI</p>
               </div>
             </div>
             <p className="text-gray-400 mb-4">
-              Navigate The Deep Waters With AI Precision
+              Free AI-Powered Fishing Assistant - Navigate The Deep Waters With AI Precision
             </p>
             <div className="flex space-x-4">
               <a 
@@ -26,14 +26,15 @@ const Footer = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-cyber-blue hover:text-white transition-colors"
+                title="AiWebTools.AI - Free AI Web Tools"
               >
-                Visit AiWebTools.Ai
+                Visit AiWebTools.AI for More Free AI Tools
               </a>
             </div>
           </div>
           
           <div>
-            <h4 className="text-white font-medium mb-4">Navigation</h4>
+            <h4 className="text-white font-medium mb-4">Free AI Tools Navigation</h4>
             <ul className="space-y-2">
               <li>
                 <a 
@@ -41,40 +42,45 @@ const Footer = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-cyber-blue transition-colors"
+                  title="Use Free AI Fishing Assistant"
                 >
-                  USE Fisherman GPT Now
+                  USE Free AI Fishing Tool Now
                 </a>
               </li>
               <li>
                 <a 
                   href="#features" 
                   className="text-gray-400 hover:text-cyber-blue transition-colors"
+                  title="AI Fishing Tool Features"
                 >
-                  Features
+                  AI Fishing Features
                 </a>
               </li>
               <li>
                 <a 
                   href="#how-it-works" 
                   className="text-gray-400 hover:text-cyber-blue transition-colors"
+                  title="How AI Fishing Assistant Works"
                 >
-                  How It Works
+                  How AI Fishing Works
                 </a>
               </li>
               <li>
                 <a 
                   href="#faq" 
                   className="text-gray-400 hover:text-cyber-blue transition-colors"
+                  title="AI Fishing Tool FAQ"
                 >
-                  FAQ
+                  AI Fishing FAQ
                 </a>
               </li>
               <li>
                 <a 
                   href="#disclaimer" 
                   className="text-gray-400 hover:text-cyber-blue transition-colors"
+                  title="AI Fishing Tool Disclaimer"
                 >
-                  Disclaimer
+                  AI Tool Disclaimer
                 </a>
               </li>
               <li>
@@ -83,15 +89,16 @@ const Footer = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-cyber-blue transition-colors"
+                  title="AiWebTools.AI - More Free AI Tools"
                 >
-                  More AI Tools
+                  More Free AI Web Tools
                 </a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-white font-medium mb-4">Legal</h4>
+            <h4 className="text-white font-medium mb-4">AI Tools Legal</h4>
             <ul className="space-y-2">
               <li>
                 <a 
@@ -99,8 +106,9 @@ const Footer = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-cyber-blue transition-colors"
+                  title="AI Tools Privacy Policy"
                 >
-                  Privacy Policy
+                  AI Tools Privacy Policy
                 </a>
               </li>
               <li>
@@ -109,20 +117,22 @@ const Footer = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-cyber-blue transition-colors"
+                  title="AiWebTools.AI Terms of Service"
                 >
-                  Terms of Service
+                  AiWebTools.AI Terms of Service
                 </a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-white font-medium mb-4">Contact</h4>
+            <h4 className="text-white font-medium mb-4">Contact AI WEB TOOLS</h4>
             <ul className="space-y-2">
               <li>
                 <a 
                   href="tel:4758008096" 
                   className="text-gray-400 hover:text-cyber-blue transition-colors"
+                  title="Call AI WEB TOOLS LLC"
                 >
                   (475) 800-8096
                 </a>
@@ -131,6 +141,7 @@ const Footer = () => {
                 <a 
                   href="mailto:Contact@ai-webtools.com" 
                   className="text-gray-400 hover:text-cyber-blue transition-colors"
+                  title="Email AI WEB TOOLS LLC"
                 >
                   Contact@ai-webtools.com
                 </a>
@@ -146,8 +157,9 @@ const Footer = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-cyber-blue transition-colors"
+              title="AI WEB TOOLS LLC - Free AI Tools Provider"
             >
-              © 2025 AI WEB TOOLS LLC All rights reserved.
+              © 2025 AI WEB TOOLS LLC - AiWebTools.AI - Free AI Tools Provider. All rights reserved.
             </a>
           </p>
           
@@ -157,8 +169,9 @@ const Footer = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block px-6 py-2 rounded-full bg-cyber-blue/10 border border-cyber-blue/30 text-cyber-blue hover:bg-cyber-blue/20 transition-colors"
+              title="Discover More Free AI Web Tools"
             >
-              More AI Tools
+              More Free AI Web Tools
             </a>
           </div>
         </div>
