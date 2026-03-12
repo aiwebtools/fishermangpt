@@ -2,14 +2,16 @@
 import React from 'react';
 import { Fish } from 'lucide-react';
 
+const AIWEBTOOLS_URL = "https://aiwebtools.lovable.app/?via=aiwebtools";
+
 const Footer = () => {
   return (
     <footer className="border-t border-cyber-blue/20 relative">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-1">
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="sm:col-span-2 md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <Fish className="h-8 w-8 text-cyber-blue" />
+              <Fish className="h-8 w-8 text-cyber-blue flex-shrink-0" />
               <div>
                 <h3 className="font-cyber text-xl font-bold tracking-wider text-white">
                   Fisherman <span className="neon-text">GPT</span>
@@ -17,15 +19,15 @@ const Footer = () => {
                 <p className="text-xs text-gray-400">Free AI Tools by AiWebTools.AI</p>
               </div>
             </div>
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-400 mb-4 text-sm md:text-base">
               Free AI-Powered Fishing Assistant - Navigate The Deep Waters With AI Precision
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://www.aiwebtools.ai" 
+                href={AIWEBTOOLS_URL}
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-cyber-blue hover:text-white transition-colors"
+                className="text-cyber-blue hover:text-white transition-colors text-sm md:text-base"
                 title="AiWebTools.AI - Free AI Web Tools"
               >
                 Visit AiWebTools.AI for More Free AI Tools
@@ -48,44 +50,28 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a 
-                  href="#features" 
-                  className="text-gray-400 hover:text-cyber-blue transition-colors"
-                  title="AI Fishing Tool Features"
-                >
+                <a href="#features" className="text-gray-400 hover:text-cyber-blue transition-colors" title="AI Fishing Tool Features">
                   AI Fishing Features
                 </a>
               </li>
               <li>
-                <a 
-                  href="#how-it-works" 
-                  className="text-gray-400 hover:text-cyber-blue transition-colors"
-                  title="How AI Fishing Assistant Works"
-                >
+                <a href="#how-it-works" className="text-gray-400 hover:text-cyber-blue transition-colors" title="How AI Fishing Assistant Works">
                   How AI Fishing Works
                 </a>
               </li>
               <li>
-                <a 
-                  href="#faq" 
-                  className="text-gray-400 hover:text-cyber-blue transition-colors"
-                  title="AI Fishing Tool FAQ"
-                >
+                <a href="#faq" className="text-gray-400 hover:text-cyber-blue transition-colors" title="AI Fishing Tool FAQ">
                   AI Fishing FAQ
                 </a>
               </li>
               <li>
-                <a 
-                  href="#disclaimer" 
-                  className="text-gray-400 hover:text-cyber-blue transition-colors"
-                  title="AI Fishing Tool Disclaimer"
-                >
+                <a href="#disclaimer" className="text-gray-400 hover:text-cyber-blue transition-colors" title="AI Fishing Tool Disclaimer">
                   AI Tool Disclaimer
                 </a>
               </li>
               <li>
                 <a 
-                  href="https://www.aiwebtools.ai" 
+                  href={AIWEBTOOLS_URL}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-cyber-blue transition-colors"
@@ -113,7 +99,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://aiwebtools.ai/terms-of-services" 
+                  href={AIWEBTOOLS_URL}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-cyber-blue transition-colors"
@@ -150,10 +136,10 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-cyber-blue/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">
+        <div className="border-t border-cyber-blue/20 mt-8 md:mt-12 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-gray-400 text-xs md:text-sm text-center md:text-left">
             <a 
-              href="https://www.aiwebtools.ai" 
+              href={AIWEBTOOLS_URL}
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-cyber-blue transition-colors"
@@ -165,10 +151,10 @@ const Footer = () => {
           
           <div className="relative">
             <a 
-              href="https://www.aiwebtools.ai" 
+              href={AIWEBTOOLS_URL}
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block px-6 py-2 rounded-full bg-cyber-blue/10 border border-cyber-blue/30 text-cyber-blue hover:bg-cyber-blue/20 transition-colors"
+              className="inline-block px-4 md:px-6 py-2 rounded-full bg-cyber-blue/10 border border-cyber-blue/30 text-cyber-blue hover:bg-cyber-blue/20 transition-colors text-sm md:text-base whitespace-nowrap"
               title="Discover More Free AI Web Tools"
             >
               More Free AI Web Tools
